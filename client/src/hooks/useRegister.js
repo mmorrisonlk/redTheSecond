@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const initialState = {
   username: "",
@@ -43,23 +43,44 @@ export const validateInfo = (values) => {
 
 const useRegister = (validateInfo) => {
   const [values, setValues] = useState(initialState);
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState(null);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const resetValuesProper = (errorState, values) => {
+    let newValues = {
+      username: errorState?.username ? "" : values.username,
+      email: errorState?.email ? "" : values.email,
+      confirmEmail: errorState?.confirmEmail ? "" : values.confirmEmail,
+      password: errorState?.password ? "" : values.password,
+      confirmPassword: errorState?.confirmPassword
+        ? ""
+        : values.confirmPassword,
+    };
+    if (!errorState || Object.keys(errorState).length < 1) {
+      setValues(initialState);
+      setSuccess(true);
+    } else {
+      setValues(newValues);
+      setSuccess(false);
+    }
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validateInfo(values));
-    setValues(initialState);
+    resetValuesProper(validateInfo(values), values);
   };
   return {
     handleChange,
     handleSubmit,
     values,
     errors,
+    success,
   };
 };
 
