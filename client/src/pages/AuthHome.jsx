@@ -17,7 +17,7 @@ const Registration = () => {
   return (
   <div className={classes.container}>
       <div className={`${classes.btn__container}`}>
-        <Button className={classes.btn} onClick={signUpHandler}>Sign Up</Button>
+        <Button className={classes.btn} onClick={signUpHandler}>Sign In</Button>
         <Button className={classes.btn} onClick={registrationHandler}>Registration</Button>
       </div>
   </div>

@@ -28,11 +28,11 @@ const Registration = () => {
             {errors?.username ? <p className={classes.error}>{errors?.username}</p> : <p></p>}
           </div>
           <div className={`${classes.input__container}`}>
-            <Input type='email' name='email' placeHolder="E-mail" value={values.email} onChange={handleChange} />
+            <Input type='email' name='email' placeHolder="E-mail" value={values.email} onChange={handleChange}/>
             {errors?.email ? <p className={classes.error}>{errors?.email}</p> : <p></p>}
           </div>
           <div className={`${classes.input__container}`}>
-            <Input type='email' name='confirmEmail' placeHolder="Confirm E-mail" value={values.confirmEmail} onChange={handleChange}/>    
+            <Input type='email' name='confirmEmail' placeHolder="Confirm E-mail" value={values.confirmEmail} onChange={handleChange} autoComplete='no'/>    
             {errors?.confirmEmail ? <p className={classes.error}>{errors?.confirmEmail}</p> : <p></p>}
           </div>
           <div className={`${classes.input__container}`}>
