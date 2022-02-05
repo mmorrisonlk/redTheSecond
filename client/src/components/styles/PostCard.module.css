@@ -10,11 +10,20 @@
   flex-wrap: wrap;
   width: 100%;
   font-size: 1.2rem;
+  padding: 0.5rem 0 0.5rem 0.3rem;
+}
+.post__info {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: flex-start;
+  padding-left: 1rem;
 }
 
 .title {
   font-size: 1.5rem;
   width: 100%;
+  text-align: left;
 }
 
 .profile__pic {
@@ -33,4 +42,10 @@
 
 .post__container img {
   width: 100%;
+}
+
+.icon__holder {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
 }

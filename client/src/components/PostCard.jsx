@@ -10,13 +10,20 @@ const PostCard = (props) => {
       <div className={classes.container}>
         <div className={`${classes.post__header}`}>
           <img className={`${classes.profile__pic}`} src={post.userImage} alt="" />
-          <p>{post.subGroup} - {moment(post.createdAt).fromNow()}</p>
-          <h1 className={classes.title}>{post.title}</h1>
+          <div className={classes.post__info}>
+            <p>{post.subGroup} - {moment(post.createdAt).fromNow()}</p>
+            <h1 className={classes.title}>{post.title}</h1>
+            </div>
         </div>
         <div className={classes.post__container}>
           <img src={post.image} alt="" />
         </div>
-        <div></div>
+        <div className={classes.icon__holder}>
+          <p>{post.likes} ^</p>
+          <p>{post.dislikes} v</p>
+          <p>comments</p>
+          <p>share</p>
+        </div>
       </div>
   );
 };

@@ -16,6 +16,8 @@ const posts = [
     subGroup: 'r/chuds',
     image: Post1,
     createdAt: new Date().toISOString(),
+    likes: 100,
+    dislikes: 3,
   },
   {
     title: 'This is the next post',
@@ -23,6 +25,8 @@ const posts = [
     subGroup: 'r/crypto',
     image: Post2,
     createdAt: new Date().toISOString(),
+    likes: 10,
+    dislikes: 3000,
   },
   {
     title: 'This is the last post',
@@ -30,6 +34,8 @@ const posts = [
     subGroup: 'r/wholesome',
     image: Post3,
     createdAt: new Date().toISOString(),
+    likes: 249,
+    dislikes: 15,
   }
 ]
 
