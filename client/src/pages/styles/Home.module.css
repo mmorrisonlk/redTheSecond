@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  background-color: rgb(216, 216, 216);
+  background-image: url("../../images/dots.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}

@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.398);
+}
+.post__header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.profile__pic {
+  width: 10%;
+  max-width: 4rem;
+  border-radius: 100px;
+}
+
+.post__container {
+  width: 100%;
+}
+.post__container img {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.post__container img {
+  width: 100%;
+}
