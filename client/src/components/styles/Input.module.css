@@ -1,0 +1,15 @@
+.input {
+  height: 3.5rem;
+  width: 100%;
+  border: 1px solid rgba(211, 211, 211, 0.844);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 0.7rem 1rem;
+  box-shadow: -0.1rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2),
+    0.1rem 0 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.input::placeholder {
+  color: rgb(139, 139, 139);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+}

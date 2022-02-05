@@ -1,0 +1,92 @@
+.container {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../images/dots.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 370%;
+}
+.input__container {
+  padding: 0 3.5rem 0 3.5rem;
+  width: 100%;
+}
+.input__container p {
+  height: 2rem;
+  padding-top: 0.2rem;
+}
+.register {
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn__container {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.error {
+  height: 2rem;
+  padding-top: 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: rgb(245, 58, 58);
+  width: 100%;
+  animation: moveUp 0.1s ease-out;
+}
+
+.success {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  background-color: rgb(0, 216, 0);
+  color: white;
+  height: 5rem;
+  width: 100%;
+  padding-top: 1rem;
+  position: absolute;
+  top: 15rem;
+  animation: moveDown 0.2s ease-out;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0.7;
+    transform: translateY(0.1rem);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-0.05rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
