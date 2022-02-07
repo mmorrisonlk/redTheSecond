@@ -5,5 +5,19 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-size: 400%;
+}
+
+/* @media (min-width: 100rem) {
+  .container {
+    background-size: 400%;
+    background-repeat: repeat;
+  }
+} */
+
+@media (min-width: 65rem) {
+  .container {
+    background-size: 170%;
+    background-repeat: repeat;
+  }
 }

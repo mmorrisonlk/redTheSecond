@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  flex-direction: column;
+  background-color: white;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  box-shadow: 0rem 0.5rem 1rem rgba(94, 94, 94, 0.398);
+}
+
+.user_search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.profile__pic {
+  width: 10%;
+  max-width: 4rem;
+  border-radius: 10rem;
+}
+
+.input {
+  background-color: rgb(226, 226, 226);
+  border-radius: 0.7rem;
+  height: 2.8rem;
+  width: 25rem;
+  border: 0.2rem solid rgb(189, 189, 189);
+  padding: 0.3rem;
+}
+
+.input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4rem;
+}
+
+.link,
+.link:visited {
+  color: #37b7ff;
+  text-decoration: none;
+}
+
+.filter {
+  font-size: 1.7rem;
+}
